@@ -30,6 +30,7 @@ class ValidadeThings{
 
             let array = deal.value[0].OtherProperties
 
+            let id_cliente = deal.value[0].Id;
             let CidadeDaGarantia = 'oi';
             let ValorDaGarantia = 0;
             let ValorSolicitado = 0;
@@ -59,6 +60,7 @@ class ValidadeThings{
             });
     
             const obj = {
+                "Id": id_cliente,
                 "CidadeDaGarantia": CidadeDaGarantia,
                 "ValorDaGarantia": ValorDaGarantia,
                 "ValorSolicitado": ValorSolicitado,
