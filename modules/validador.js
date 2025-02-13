@@ -31,6 +31,8 @@ class ValidadeThings{
             let array = deal.value[0].OtherProperties
 
             let id_cliente = deal.value[0].Id;
+            let nome_user = deal.value[0].Contact.Name;
+            let e_mail = deal.value[0].Contact.Email;
             let CidadeDaGarantia = 'oi';
             let ValorDaGarantia = 0;
             let ValorSolicitado = 0;
@@ -61,6 +63,8 @@ class ValidadeThings{
     
             const obj = {
                 "Id": id_cliente,
+                "nome": nome_user,
+                "email": e_mail,
                 "CidadeDaGarantia": CidadeDaGarantia,
                 "ValorDaGarantia": ValorDaGarantia,
                 "ValorSolicitado": ValorSolicitado,
